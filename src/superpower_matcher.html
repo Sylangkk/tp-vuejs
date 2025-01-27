@@ -72,15 +72,6 @@
     </div>
 
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            fetch('navbar.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('navbar-placeholder').innerHTML = data;
-                })
-                .catch(error => console.error('Erreur lors du chargement de la navbar:', error));
-        });
-
         const app = Vue.createApp({
             data() {
                 return {
